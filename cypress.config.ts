@@ -83,7 +83,9 @@ module.exports = defineConfig({
         viteConfig: resolvedViteConfig,
       });
     },
-    specPattern: "src/**/*.cy.{js,jsx,ts,tsx}",
+    // specPattern: "src/**/*.cy.{js,jsx,ts,tsx}",
+    specPattern: "src/**/*.{cy,spec}.{js,jsx,ts,tsx}",
+
     supportFile: "cypress/support/component.ts",
     setupNodeEvents(on, config) {
       codeCoverageTask(on, config);
@@ -92,7 +94,9 @@ module.exports = defineConfig({
   },
   e2e: {
     baseUrl: "http://localhost:3000",
-    specPattern: "cypress/tests/**/*.spec.{js,jsx,ts,tsx}",
+    // specPattern: "cypress/tests/**/*.spec.{js,jsx,ts,tsx}",
+    specPattern: "cypress/tests/**/*.{cy,spec}.{js,jsx,ts,tsx}",
+
     supportFile: "cypress/support/e2e.ts",
     viewportHeight: 1000,
     viewportWidth: 1280,
