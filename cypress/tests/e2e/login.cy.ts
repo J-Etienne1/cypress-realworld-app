@@ -1,9 +1,9 @@
 import SignInPage from "../../page-objects/pages/signinPage";
 
-describe("Access the application's homepage", () => {
+describe("Login Feature", () => {
   const signInPage = new SignInPage();
 
-  it("should load the application's homepage", () => {
+  it("Allows a user to access the login page, enter login credentials, and submit the login form", () => {
     signInPage.navigateToHomePage();
     signInPage.verifySignInFormLogoIsVisible();
     signInPage.verifySignInFormIsVisible();
