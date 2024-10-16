@@ -34,6 +34,8 @@ module.exports = defineConfig({
     },
     defaultPassword: process.env.SEED_DEFAULT_USER_PASSWORD,
     paginationPageSize: process.env.PAGINATION_PAGE_SIZE,
+    USERNAME: process.env.USERNAME,
+    PASSWORD: process.env.PASSWORD,
 
     // Auth0
     auth0_username: process.env.AUTH0_USERNAME,

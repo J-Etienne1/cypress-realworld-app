@@ -18,4 +18,24 @@ export default class SignInPage {
   verifySignInFormIsVisible() {
     this.signInForm.SignInFormIsVisible();
   }
+
+  verifyUsernameInputFieldIsPresent() {
+    this.signInForm.verifyUsernameInputFieldIsPresent();
+  }
+
+  verifyPasswordInputFieldIsPresent() {
+    this.signInForm.verifyPasswordInputFieldIsPresent();
+  }
+
+  enterUsername(username: string) {
+    this.signInForm.enterUsername(username);
+  }
+
+  enterPassword(password: string) {
+    this.signInForm.enterPassword(password);
+  }
+
+  clickSignInBtn() {
+    this.signInForm.clickSignInBtn();
+  }
 }
