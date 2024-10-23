@@ -1,8 +1,13 @@
-export default class HomePage {
-  constructor() {}
-    }
+import HomePageHeader from "../sections/home-page-header";
 
-    verifyOnHomePage() {
-      this.verifyOnHomePage()
-    }
+export default class HomePage {
+  homePageHeader: HomePageHeader;
+
+  constructor() {
+    this.homePageHeader = new HomePageHeader();
+  }
+
+  verifyHomePageLogoIsVisible() {
+    this.homePageHeader.verifyHomePageLogoIsVisible();
+  }
 }
