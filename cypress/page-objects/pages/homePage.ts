@@ -1,4 +1,8 @@
-export default class MyAccountPage {
+export default class HomePage {
   constructor() {}
+    }
+
+    verifyOnHomePage() {
+      this.verifyOnHomePage()
     }
 }
