@@ -1,13 +1,9 @@
 import homePageSelectors from "../selectors/homePageSelectors";
 
-class HomePageHeader {
-  verifyHomePageLogoIsVisible() {
-    cy.get(homePageSelectors.appLogo).should("be.visible");
-  }
-
+class HomePageTransactionList {
   verifyTransactionListIsVisible() {
     cy.get(homePageSelectors.transactionList).should("be.visible");
   }
 }
 
-export default HomePageHeader;
+export default HomePageTransactionList;
