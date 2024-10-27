@@ -1,9 +1,9 @@
-import userProfilesSidePanelSelectors from "../selectors/userProfileSidePanelSelectors";
+import userProfileSideNavSelectors from "../selectors/userProfileSidePanelSelectors";
 
-class UserProfilesSidePanel {
-  UserProfilesSidePanelIsVisible() {
-    cy.get(userProfilesSidePanelSelectors.userProfilesSidePanel).should("be.visible");
+class UserProfilesSideNav {
+  UserProfilesSideNavIsVisible() {
+    cy.get(userProfileSideNavSelectors.userProfilesSideNav).should("be.visible");
   }
 }
 
-export default UserProfilesSidePanel;
+export default UserProfilesSideNav;
