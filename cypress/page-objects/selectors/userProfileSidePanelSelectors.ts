@@ -1,5 +1,5 @@
 const userProfileSideNavSelectors = {
-  userProfilesSideNav: "[data-test'sidenav']", //need to add a cypress hook on FE
+  userProfilesSideNav: "[data-test'sidenav']",
 };
 
 export default userProfileSideNavSelectors;
