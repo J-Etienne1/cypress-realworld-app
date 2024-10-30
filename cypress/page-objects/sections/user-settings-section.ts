@@ -1,6 +1,6 @@
 import myAccountPageSelectors from "../selectors/myAccoutPageSelectors";
 
-class MyAccountPage {
+class MyAccountPageSection {
   verifyMyAccountPageIsVisible() {
     cy.get(myAccountPageSelectors.myAccountPage).should("be.visible");
   }
@@ -26,4 +26,4 @@ class MyAccountPage {
   }
 }
 
-export default MyAccountPage;
+export default MyAccountPageSection;

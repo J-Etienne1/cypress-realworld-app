@@ -1,33 +1,33 @@
-import MyAccountPage from "../sections/user-settings-section";
+import MyAccountPageSection from "../sections/user-settings-section";
 
 export default class UserSettingsSection {
-  myAccountPage: MyAccountPage;
+  myAccountPageSection: MyAccountPageSection;
 
   constructor() {
-    this.myAccountPage = new MyAccountPage();
+    this.myAccountPageSection = new MyAccountPageSection();
   }
 
   verifyUserSettingsPageIsVisible() {
-    this.myAccountPage.verifyMyAccountPageIsVisible();
+    this.myAccountPageSection.verifyMyAccountPageIsVisible();
   }
 
   verifyUserSettingsFirstNameFieldIsVisible() {
-    this.myAccountPage.verifyUserSettingsFirstNameFieldIsVisible();
+    this.myAccountPageSection.verifyUserSettingsFirstNameFieldIsVisible();
   }
 
   verifyUserSettingsLastNameFieldIsVisible() {
-    this.myAccountPage.verifyUserSettingsLastNameFieldIsVisible();
+    this.myAccountPageSection.verifyUserSettingsLastNameFieldIsVisible();
   }
 
   verifyUserSettingsEmailFieldIsVisible() {
-    this.myAccountPage.verifyUserSettingsEmailFieldIsVisible();
+    this.myAccountPageSection.verifyUserSettingsEmailFieldIsVisible();
   }
 
   verifyUserSettingsPhoneNumberFieldIsVisible() {
-    this.myAccountPage.verifyUserSettingsPhoneNumberFieldIsVisible();
+    this.myAccountPageSection.verifyUserSettingsPhoneNumberFieldIsVisible();
   }
 
   verifyUserSettingsSaveBtnIsVisible() {
-    this.myAccountPage.verifyUserSettingsSaveBtnIsVisible();
+    this.myAccountPageSection.verifyUserSettingsSaveBtnIsVisible();
   }
 }
