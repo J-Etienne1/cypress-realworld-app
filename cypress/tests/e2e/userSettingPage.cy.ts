@@ -3,12 +3,10 @@ import UserProfilesSideNav from "../../page-objects/sections/user-profile-side-p
 import MyAccountPage from "../../page-objects/sections/user-settings-section";
 
 describe("My Account Page Tests", () => {
-  //   const homepage = new HomePage();
   const myAccountPage = new MyAccountPage();
   const userProfilesSideNav = new UserProfilesSideNav();
 
   beforeEach(() => {
-    // Use the reusable login function i created in  ../support/loginHelper
     login();
   });
 
