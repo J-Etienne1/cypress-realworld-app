@@ -16,5 +16,6 @@ describe("My Account Page Tests", () => {
     userProfilesSideNav.UserProfilesSideNavIsVisible();
     userProfilesSideNav.clickMyAccount();
     myAccountPage.verifyMyAccountPageIsVisible();
+    myAccountPage.verifyUserSettingsFirstNameFieldIsVisible();
   });
 });

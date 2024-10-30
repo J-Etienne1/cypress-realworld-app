@@ -14,4 +14,20 @@ export default class UserSettingsSection {
   verifyUserSettingsFirstNameFieldIsVisible() {
     this.myAccountPage.verifyUserSettingsFirstNameFieldIsVisible();
   }
+
+  verifyUserSettingsLastNameFieldIsVisible() {
+    this.myAccountPage.verifyUserSettingsLastNameFieldIsVisible();
+  }
+
+  verifyUserSettingsEmailFieldIsVisible() {
+    this.myAccountPage.verifyUserSettingsEmailFieldIsVisible();
+  }
+
+  verifyUserSettingsPhoneNumberFieldIsVisible() {
+    this.myAccountPage.verifyUserSettingsPhoneNumberFieldIsVisible();
+  }
+
+  verifyUserSettingsSaveBtnIsVisible() {
+    this.myAccountPage.verifyUserSettingsSaveBtnIsVisible();
+  }
 }
