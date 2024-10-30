@@ -10,4 +10,8 @@ export default class UserSettingsSection {
   verifyUserSettingsPageIsVisible() {
     this.myAccountPage.verifyMyAccountPageIsVisible();
   }
+
+  verifyUserSettingsFirstNameFieldIsVisible() {
+    this.myAccountPage.verifyUserSettingsFirstNameFieldIsVisible();
+  }
 }
