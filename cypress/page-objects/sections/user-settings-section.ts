@@ -6,19 +6,19 @@ class MyAccountPageSection {
   }
 
   verifyUserSettingsFirstNameFieldIsVisible() {
-    cy.get(myAccountPageSelectors.UserSettingsFName).should("be.visible");
+    cy.get(myAccountPageSelectors.UserSettingsFNameInput).should("be.visible");
   }
 
   verifyUserSettingsLastNameFieldIsVisible() {
-    cy.get(myAccountPageSelectors.UserSettingsLName).should("be.visible");
+    cy.get(myAccountPageSelectors.UserSettingsLNameInput).should("be.visible");
   }
 
   verifyUserSettingsEmailFieldIsVisible() {
-    cy.get(myAccountPageSelectors.UserSettingsEmail).should("be.visible");
+    cy.get(myAccountPageSelectors.UserSettingsEmailInput).should("be.visible");
   }
 
   verifyUserSettingsPhoneNumberFieldIsVisible() {
-    cy.get(myAccountPageSelectors.UserSettingsPhoneNumber).should("be.visible");
+    cy.get(myAccountPageSelectors.UserSettingsPhoneNumberInput).should("be.visible");
   }
 
   verifyUserSettingsSaveBtnIsVisible() {
