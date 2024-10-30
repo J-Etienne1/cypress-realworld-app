@@ -1,6 +1,6 @@
 import MyAccountPageSection from "../sections/user-settings-section";
 
-export default class UserSettingsSection {
+class UserSettingsSection {
   myAccountPageSection: MyAccountPageSection;
 
   constructor() {
@@ -31,3 +31,5 @@ export default class UserSettingsSection {
     this.myAccountPageSection.verifyUserSettingsSaveBtnIsVisible();
   }
 }
+
+export default UserSettingsSection;

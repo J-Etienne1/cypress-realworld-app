@@ -1,4 +1,4 @@
-import myAccountPageSelectors from "../selectors/myAccoutPageSelectors";
+import myAccountPageSelectors from "../selectors/myAccountPageSelectors";
 
 class MyAccountPageSection {
   verifyMyAccountPageIsVisible() {
