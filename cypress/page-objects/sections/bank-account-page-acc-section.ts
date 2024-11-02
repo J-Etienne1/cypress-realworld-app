@@ -16,6 +16,26 @@ class BankAccountContainer {
       return cy.wrap(count);
     });
   }
+
+  clickCreateBankAccount() {
+    cy.get(bankAccPageSelectors.createBankAccount).click();
+  }
+
+  enterBankName(bankName: string) {
+    cy.get(bankAccPageSelectors.bankName).type(bankName);
+  }
+
+  enterRoutingNumber(routingNumber: string) {
+    cy.get(bankAccPageSelectors.routingNumber).type(routingNumber);
+  }
+
+  enterAccountNumber(accountNumber: string) {
+    cy.get(bankAccPageSelectors.accountNumber).type(accountNumber);
+  }
+
+  clickCreateBankAccSaveBtn() {
+    cy.get(bankAccPageSelectors.createBankAccSaveBtn).click();
+  }
 }
 
 export default BankAccountContainer;

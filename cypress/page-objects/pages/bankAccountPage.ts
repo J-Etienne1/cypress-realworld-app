@@ -10,6 +10,26 @@ class BankAccountPage {
   verifyOnBankAccountPage() {
     this.bankAccountContainer.verifyOnBankAccountPage();
   }
+
+  clickCreateBankAccount() {
+    this.bankAccountContainer.clickCreateBankAccount();
+  }
+
+  enterBankName(bankName: string) {
+    this.bankAccountContainer.enterBankName(bankName);
+  }
+
+  enterRoutingNumber(routingNumber: string) {
+    this.bankAccountContainer.enterRoutingNumber(routingNumber);
+  }
+
+  enterAccountNumber(accountNumber: string) {
+    this.bankAccountContainer.enterAccountNumber(accountNumber);
+  }
+
+  clickCreateBankAccSaveBtn() {
+    this.bankAccountContainer.clickCreateBankAccSaveBtn();
+  }
 }
 
 export default BankAccountPage;

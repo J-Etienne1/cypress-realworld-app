@@ -25,4 +25,12 @@ describe("Bank Account Page Tests", () => {
   it("Check if Bank Accounts are present", () => {
     bankAccountPage.bankAccountContainer.checkIfAnyAccountsArePresent();
   });
+
+  it("Create Bank Account", () => {
+    bankAccountPage.clickCreateBankAccount();
+    bankAccountPage.enterBankName("Jason");
+    bankAccountPage.enterRoutingNumber();
+    bankAccountPage.enterAccountNumber();
+    bankAccountPage.clickCreateBankAccSaveBtn();
+  });
 });
