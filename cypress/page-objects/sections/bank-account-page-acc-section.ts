@@ -7,13 +7,13 @@ class BankAccountContainer {
 
   checkIfAnyAccountsArePresent() {
     return cy.get(bankAccPageSelectors.bankAccounts).then(($elements) => {
-      if ($elements.length > 0) {
-        cy.log(`Found $($elements.length) Bank Accounts`);
-        return $elements.length;
+      const count = $elements.length;
+      if (count > 0) {
+        cy.log(`Found ${count} bank accounts`);
       } else {
-        cy.log("No Bank Accounts Present");
-        return 0;
+        cy.log("No bank accounts found");
       }
+      return cy.wrap(count);
     });
   }
 }
