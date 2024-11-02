@@ -30,6 +30,10 @@ class BankAccountPage {
   clickCreateBankAccSaveBtn() {
     this.bankAccountContainer.clickCreateBankAccSaveBtn();
   }
+
+  verifyNewBankAccountCreated(bankName: string) {
+    this.bankAccountContainer.verifyNewBankAccountCreated(bankName);
+  }
 }
 
 export default BankAccountPage;

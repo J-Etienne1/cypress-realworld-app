@@ -48,5 +48,6 @@ describe("Bank Account Page Tests", () => {
     bankAccountPage.enterRoutingNumber(randomRoutingNumber);
     bankAccountPage.enterAccountNumber(randomAccountNumber);
     bankAccountPage.clickCreateBankAccSaveBtn();
+    bankAccountPage.verifyNewBankAccountCreated(randomBankName);
   });
 });

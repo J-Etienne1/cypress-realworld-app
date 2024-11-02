@@ -36,6 +36,10 @@ class BankAccountContainer {
   clickCreateBankAccSaveBtn() {
     cy.get(bankAccPageSelectors.createBankAccSaveBtn).click();
   }
+
+  verifyNewBankAccountCreated(bankName: string) {
+    cy.get(bankAccPageSelectors.bankAccounts).contains(bankName).should("be.visible");
+  }
 }
 
 export default BankAccountContainer;
