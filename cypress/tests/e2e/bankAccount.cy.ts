@@ -10,18 +10,19 @@ describe("Bank Account Page Tests", () => {
   beforeEach(() => {
     // Use the reusable login function i created in  ../support/loginHelper
     login();
+
+    // Navigate to the bank accounts page as a prerequisite for each test
+    userProfilesSideNav.UserProfilesSideNavIsVisible();
+    userProfilesSideNav.clickMyBankAccounts();
+    bankAccountPage.verifyOnBankAccountPage();
   });
 
   it("Select Bank Account from SideNav", () => {
-    userProfilesSideNav.UserProfilesSideNavIsVisible();
-    userProfilesSideNav.clickMyBankAccounts();
-    bankAccountPage.verifyOnBankAccountPage();
+    // This test now only needs to focus on actions or assertions specific to selection
+    cy.log("Bank account page navigation verified successfully.");
   });
 
   it("Check if Bank Accounts are present", () => {
-    userProfilesSideNav.UserProfilesSideNavIsVisible();
-    userProfilesSideNav.clickMyBankAccounts();
-    bankAccountPage.verifyOnBankAccountPage();
     bankAccountPage.bankAccountContainer.checkIfAnyAccountsArePresent().then((accountCount) => {
       if (accountCount > 0) {
         cy.log(`Found ${accountCount} bank accounts`);
