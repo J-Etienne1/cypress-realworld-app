@@ -25,12 +25,12 @@ class BankAccountContainer {
     cy.get(bankAccPageSelectors.bankName).type(bankName);
   }
 
-  enterRoutingNumber(routingNumber: string) {
-    cy.get(bankAccPageSelectors.routingNumber).type(routingNumber);
+  enterRoutingNumber(routingNumber: number) {
+    cy.get(bankAccPageSelectors.routingNumber).type(routingNumber.toString());
   }
 
-  enterAccountNumber(accountNumber: string) {
-    cy.get(bankAccPageSelectors.accountNumber).type(accountNumber);
+  enterAccountNumber(accountNumber: number) {
+    cy.get(bankAccPageSelectors.accountNumber).type(accountNumber.toString());
   }
 
   clickCreateBankAccSaveBtn() {

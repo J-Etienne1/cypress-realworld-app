@@ -29,8 +29,8 @@ describe("Bank Account Page Tests", () => {
   it("Create Bank Account", () => {
     bankAccountPage.clickCreateBankAccount();
     bankAccountPage.enterBankName("Jason");
-    bankAccountPage.enterRoutingNumber();
-    bankAccountPage.enterAccountNumber();
+    bankAccountPage.enterRoutingNumber(111111111);
+    bankAccountPage.enterAccountNumber(222222222);
     bankAccountPage.clickCreateBankAccSaveBtn();
   });
 });

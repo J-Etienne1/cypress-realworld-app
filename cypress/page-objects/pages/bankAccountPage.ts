@@ -19,11 +19,11 @@ class BankAccountPage {
     this.bankAccountContainer.enterBankName(bankName);
   }
 
-  enterRoutingNumber(routingNumber: string) {
+  enterRoutingNumber(routingNumber: number) {
     this.bankAccountContainer.enterRoutingNumber(routingNumber);
   }
 
-  enterAccountNumber(accountNumber: string) {
+  enterAccountNumber(accountNumber: number) {
     this.bankAccountContainer.enterAccountNumber(accountNumber);
   }
 

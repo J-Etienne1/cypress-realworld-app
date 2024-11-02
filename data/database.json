@@ -253,6 +253,17 @@
       "isDeleted": false,
       "createdAt": "2024-01-26T14:01:01.815Z",
       "modifiedAt": "2024-03-07T08:44:31.174Z"
+    },
+    {
+      "id": "nRW3SSTDr",
+      "uuid": "f6d01afb-9591-4b8d-9ab0-198c0ea50994",
+      "userId": "uBmeaz5pX",
+      "bankName": "Jason",
+      "accountNumber": "222222222",
+      "routingNumber": "111111111",
+      "isDeleted": false,
+      "createdAt": "2024-11-02T16:28:34.791Z",
+      "modifiedAt": "2024-11-02T16:28:34.791Z"
     }
   ],
   "transactions": [
