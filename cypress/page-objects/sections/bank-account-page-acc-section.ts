@@ -1,6 +1,6 @@
 import bankAccPageSelectors from "../selectors/bankAccPageSelectors";
 
-class bankAccountContainer {
+class BankAccountContainer {
   verifyOnBankAccountPage() {
     cy.get(bankAccPageSelectors.bankAccountContainer).should("be.visible");
   }
@@ -18,4 +18,4 @@ class bankAccountContainer {
   }
 }
 
-export default bankAccountContainer;
+export default BankAccountContainer;
