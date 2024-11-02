@@ -6,6 +6,10 @@ class BankAccountPage {
   constructor() {
     this.bankAccountContainer = new BankAccountContainer();
   }
+
+  verifyOnBankAccountPage() {
+    this.bankAccountContainer.verifyOnBankAccountPage();
+  }
 }
 
 export default BankAccountPage;

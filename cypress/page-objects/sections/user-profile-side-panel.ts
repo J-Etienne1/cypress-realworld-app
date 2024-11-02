@@ -8,6 +8,10 @@ class UserProfilesSideNav {
   clickMyAccount() {
     cy.get(userProfileSideNavSelectors.myAccount).click();
   }
+
+  clickMyBankAccounts() {
+    cy.get(userProfileSideNavSelectors.bankAccounts).click();
+  }
 }
 
 export default UserProfilesSideNav;
