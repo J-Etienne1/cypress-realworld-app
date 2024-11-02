@@ -18,17 +18,11 @@ describe("Bank Account Page Tests", () => {
   });
 
   it("Select Bank Account from SideNav", () => {
-    // This test now only needs to focus on actions or assertions specific to selection
+    // This test now only needs to focus on actions or assertions specific to selection after removing duplicate code from it blocks
     cy.log("Bank account page navigation verified successfully.");
   });
 
   it("Check if Bank Accounts are present", () => {
-    bankAccountPage.bankAccountContainer.checkIfAnyAccountsArePresent().then((accountCount) => {
-      if (accountCount > 0) {
-        cy.log(`Found ${accountCount} bank accounts`);
-      } else {
-        cy.log("No bank accounts found");
-      }
-    });
+    bankAccountPage.bankAccountContainer.checkIfAnyAccountsArePresent();
   });
 });
