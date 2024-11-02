@@ -27,10 +27,26 @@ describe("Bank Account Page Tests", () => {
   });
 
   it("Create Bank Account", () => {
+    const randomRoutingNumber = Math.floor(100000000 + Math.random() * 900000000); // Generates a random 9-digit number
+    const randomAccountNumber = Math.floor(100000000 + Math.random() * 900000000); // Generates another random 9-digit number
+
+    // Function to generate a random string for bank names
+    function generateRandomBankName(length: number) {
+      let result = "";
+      const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+      const charactersLength = characters.length;
+      for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+      }
+      return result;
+    }
+
+    const randomBankName = generateRandomBankName(8); // Generate an 8-character random bank name
+
     bankAccountPage.clickCreateBankAccount();
-    bankAccountPage.enterBankName("Jason");
-    bankAccountPage.enterRoutingNumber(111111111);
-    bankAccountPage.enterAccountNumber(222222222);
+    bankAccountPage.enterBankName(randomBankName);
+    bankAccountPage.enterRoutingNumber(randomRoutingNumber);
+    bankAccountPage.enterAccountNumber(randomAccountNumber);
     bankAccountPage.clickCreateBankAccSaveBtn();
   });
 });

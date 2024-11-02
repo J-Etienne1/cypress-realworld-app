@@ -264,6 +264,17 @@
       "isDeleted": false,
       "createdAt": "2024-11-02T16:28:34.791Z",
       "modifiedAt": "2024-11-02T16:28:34.791Z"
+    },
+    {
+      "id": "2uIpvHLxT",
+      "uuid": "2ae098b9-74d3-4146-9b89-87cc5419674c",
+      "userId": "uBmeaz5pX",
+      "bankName": "BPlBgFZS",
+      "accountNumber": "606405612",
+      "routingNumber": "755151156",
+      "isDeleted": false,
+      "createdAt": "2024-11-02T16:34:36.158Z",
+      "modifiedAt": "2024-11-02T16:34:36.158Z"
     }
   ],
   "transactions": [
