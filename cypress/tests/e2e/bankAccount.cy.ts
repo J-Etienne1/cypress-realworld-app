@@ -50,4 +50,8 @@ describe("Bank Account Page Tests", () => {
     bankAccountPage.clickCreateBankAccSaveBtn();
     bankAccountPage.verifyNewBankAccountCreated(randomBankName);
   });
+
+  it.skip("Delete Newly Created Bank Account", () => {
+    // TO DO
+  });
 });
