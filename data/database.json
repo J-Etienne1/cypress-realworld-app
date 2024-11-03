@@ -264,6 +264,17 @@
       "isDeleted": true,
       "createdAt": "2024-11-03T15:25:58.864Z",
       "modifiedAt": "2024-11-03T15:25:58.864Z"
+    },
+    {
+      "id": "mK9x7I8lA",
+      "uuid": "4b200a6a-c535-4536-9a0e-956a76032c66",
+      "userId": "_XblMqbuoP",
+      "bankName": "upxXfAcn",
+      "accountNumber": "602188795",
+      "routingNumber": "213039633",
+      "isDeleted": true,
+      "createdAt": "2024-11-03T15:29:14.387Z",
+      "modifiedAt": "2024-11-03T15:29:14.387Z"
     }
   ],
   "transactions": [

@@ -1,4 +1,4 @@
-export function generateRandomBankName(length: number) {
+function generateRandomBankName(length: number) {
   let result = "";
   const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
   const charactersLength = characters.length;

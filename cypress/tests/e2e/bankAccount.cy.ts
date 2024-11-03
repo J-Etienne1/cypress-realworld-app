@@ -2,6 +2,9 @@ import login from "../../support/loginHelper";
 import BankAccountPage from "../../page-objects/pages/bankAccountPage";
 import UserProfilesSideNav from "../../page-objects/sections/user-profile-side-panel";
 import generateRandomBankName from "../../support/generateRandomBankName";
+import generateRandomAccountNumber from "../../support/randomAccountNumber";
+import generateRandomRoutingNumber from "../../support/randomRoutingNumber";
+
 
 // const randomBankName = generateRandomBankName(10);
 
@@ -21,7 +24,6 @@ describe("Bank Account Page Tests", () => {
   });
 
   it("Select Bank Account from SideNav", () => {
-    // This test now only needs to focus on actions or assertions specific to selection after removing duplicate code from it blocks
     cy.log("Bank account page navigation verified successfully.");
   });
 
@@ -30,8 +32,8 @@ describe("Bank Account Page Tests", () => {
   });
 
   it("Create Bank Account", () => {
-    const randomRoutingNumber = Math.floor(100000000 + Math.random() * 900000000); // Generates a random 9-digit number
-    const randomAccountNumber = Math.floor(100000000 + Math.random() * 900000000); // Generates another random 9-digit number
+    const randomRoutingNumber = generateRandomAccountNumber();
+    const randomAccountNumber = generateRandomRoutingNumber();
     const randomBankName = generateRandomBankName(8);
 
     bankAccountPage.bankAccountContainer.createAndVerifyBankAccount(
@@ -39,8 +41,6 @@ describe("Bank Account Page Tests", () => {
       randomRoutingNumber,
       randomAccountNumber
     );
-
-    // Function to generate a random string for bank names
   });
 
   it("Delete a Bank Account", () => {
