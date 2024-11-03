@@ -5,9 +5,6 @@ import generateRandomBankName from "../../support/generateRandomBankName";
 import generateRandomAccountNumber from "../../support/randomAccountNumber";
 import generateRandomRoutingNumber from "../../support/randomRoutingNumber";
 
-
-// const randomBankName = generateRandomBankName(10);
-
 describe("Bank Account Page Tests", () => {
   //   const homepage = new HomePage();
   const userProfilesSideNav = new UserProfilesSideNav();
@@ -32,9 +29,9 @@ describe("Bank Account Page Tests", () => {
   });
 
   it("Create Bank Account", () => {
+    const randomBankName = generateRandomBankName(8);
     const randomRoutingNumber = generateRandomAccountNumber();
     const randomAccountNumber = generateRandomRoutingNumber();
-    const randomBankName = generateRandomBankName(8);
 
     bankAccountPage.bankAccountContainer.createAndVerifyBankAccount(
       randomBankName,

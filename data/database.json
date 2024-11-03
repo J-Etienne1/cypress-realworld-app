@@ -275,6 +275,17 @@
       "isDeleted": true,
       "createdAt": "2024-11-03T15:29:14.387Z",
       "modifiedAt": "2024-11-03T15:29:14.387Z"
+    },
+    {
+      "id": "jgX8cngNi",
+      "uuid": "5779f33a-7917-43e1-a22e-2be8060e5899",
+      "userId": "_XblMqbuoP",
+      "bankName": "VsgcuoGl",
+      "accountNumber": "693500833",
+      "routingNumber": "688279355",
+      "isDeleted": true,
+      "createdAt": "2024-11-03T15:36:39.441Z",
+      "modifiedAt": "2024-11-03T15:36:39.441Z"
     }
   ],
   "transactions": [
