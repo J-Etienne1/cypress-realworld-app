@@ -98,7 +98,7 @@ module.exports = defineConfig({
     baseUrl: "http://localhost:3000",
     // specPattern: "cypress/tests/**/*.spec.{js,jsx,ts,tsx}",
     specPattern: "cypress/tests/**/*.{cy,spec}.{js,jsx,ts,tsx}",
-
+    watchForFileChanges: false,
     supportFile: "cypress/support/e2e.ts",
     viewportHeight: 1000,
     viewportWidth: 1280,
