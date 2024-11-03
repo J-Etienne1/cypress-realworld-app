@@ -41,12 +41,12 @@ class BankAccountContainer {
     cy.get(bankAccPageSelectors.bankAccounts).contains(bankName).should("be.visible");
   }
 
-  clickDeleteBankAccountBtn() {
+  clickDeleteBankAccountBtn(bankName: string) {
     cy.get(bankAccPageSelectors.deleteBankAccount).click();
   }
 
-  findBankAccountByName() {
-    cy.get(bankAccPageSelectors.bankAccountListItem);
+  findBankAccountByName(bankName: string) {
+    cy.get(bankAccPageSelectors.bankAccountListItem).contains(bankName);
   }
 }
 
