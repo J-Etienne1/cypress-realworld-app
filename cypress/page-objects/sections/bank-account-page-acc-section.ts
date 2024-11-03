@@ -42,7 +42,7 @@ class BankAccountContainer {
   }
 
   clickDeleteBankAccountBtn() {
-    cy.get(bankAccPageSelectors.deleteBankAccount).click();
+    cy.get(bankAccPageSelectors.deleteBankAccount).last().click();
   }
 }
 

@@ -407,6 +407,28 @@
       "isDeleted": false,
       "createdAt": "2024-11-03T14:39:08.145Z",
       "modifiedAt": "2024-11-03T14:39:08.145Z"
+    },
+    {
+      "id": "19IlUgXyK",
+      "uuid": "a0064d3c-b0b6-428d-9a9e-db35d91a87e2",
+      "userId": "_XblMqbuoP",
+      "bankName": "LpnOLlzP",
+      "accountNumber": "361765904",
+      "routingNumber": "314337863",
+      "isDeleted": true,
+      "createdAt": "2024-11-03T14:42:32.422Z",
+      "modifiedAt": "2024-11-03T14:42:32.422Z"
+    },
+    {
+      "id": "oI7u41IVd",
+      "uuid": "2a03d526-cafa-45a0-b12a-0089352aa233",
+      "userId": "_XblMqbuoP",
+      "bankName": "quExQbae",
+      "accountNumber": "330691530",
+      "routingNumber": "817242100",
+      "isDeleted": true,
+      "createdAt": "2024-11-03T14:42:45.609Z",
+      "modifiedAt": "2024-11-03T14:42:45.609Z"
     }
   ],
   "transactions": [
