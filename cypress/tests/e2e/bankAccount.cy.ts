@@ -6,7 +6,6 @@ describe("Bank Account Page Tests", () => {
   //   const homepage = new HomePage();
   const userProfilesSideNav = new UserProfilesSideNav();
   const bankAccountPage = new BankAccountPage();
-  let randomBankName: string;
 
   beforeEach(() => {
     // Use the reusable login helper function i created in  ../support/loginHelper
@@ -52,16 +51,7 @@ describe("Bank Account Page Tests", () => {
     bankAccountPage.verifyNewBankAccountCreated(randomBankName);
   });
 
-  it.skip("Delete Newly Created Bank Account", () => {
-    // Check if `randomBankName` exists before trying to delete
-    if (randomBankName) {
-      bankAccountPage.findBankAccountByName(randomBankName);
-      bankAccountPage.clickDeleteBankAccountBtn(randomBankName);
-      cy.log(`Bank Account "${randomBankName}" deleted`);
-    } else {
-      throw new Error(
-        "No bank account name found to delete. Ensure 'Create Bank Account' test runs first."
-      );
-    }
+  it("Delete a Bank Account", () => {
+    bankAccountPage.clickDeleteBankAccountBtn();
   });
 });

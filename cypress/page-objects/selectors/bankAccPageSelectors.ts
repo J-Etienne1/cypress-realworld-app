@@ -1,6 +1,6 @@
 const bankAccPageSelectors = {
   bankAccounts: '[data-test="bankaccount-list"]',
-  bankAccountListItem: "p.MuiTypography-root.MuiTypography-body1",
+  bankAccountListItem: '[data-test="bankaccount-list-item"]',
   createBankAccount: '[data-test="bankaccount-new"]',
   deleteBankAccount: '[data-test="bankaccount-delete"]',
   bankAccountContainer: ".MuiContainer-root",

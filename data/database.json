@@ -363,6 +363,50 @@
       "isDeleted": false,
       "createdAt": "2024-11-03T14:25:58.450Z",
       "modifiedAt": "2024-11-03T14:25:58.450Z"
+    },
+    {
+      "id": "FqtOl7MMX",
+      "uuid": "32dbb5f1-78de-40fc-887e-ab0a5df07cab",
+      "userId": "_XblMqbuoP",
+      "bankName": "hjhnyEMd",
+      "accountNumber": "847970945",
+      "routingNumber": "189709647",
+      "isDeleted": false,
+      "createdAt": "2024-11-03T14:31:38.963Z",
+      "modifiedAt": "2024-11-03T14:31:38.963Z"
+    },
+    {
+      "id": "0Kl4lDm6N",
+      "uuid": "ed0f94c3-34f7-424f-ad9c-23605f1d87eb",
+      "userId": "_XblMqbuoP",
+      "bankName": "ewDeqOrD",
+      "accountNumber": "289501771",
+      "routingNumber": "896091611",
+      "isDeleted": false,
+      "createdAt": "2024-11-03T14:33:44.991Z",
+      "modifiedAt": "2024-11-03T14:33:44.991Z"
+    },
+    {
+      "id": "SBY4I4w6S",
+      "uuid": "8a0c8475-386d-4d62-8df1-59739a3066c2",
+      "userId": "_XblMqbuoP",
+      "bankName": "QWbvhhvx",
+      "accountNumber": "971401718",
+      "routingNumber": "140852589",
+      "isDeleted": false,
+      "createdAt": "2024-11-03T14:36:37.479Z",
+      "modifiedAt": "2024-11-03T14:36:37.479Z"
+    },
+    {
+      "id": "SlMYMOBl1",
+      "uuid": "dff9bb92-02a7-48dc-93a2-c67eb2997173",
+      "userId": "_XblMqbuoP",
+      "bankName": "ItCwJvii",
+      "accountNumber": "690777014",
+      "routingNumber": "666270121",
+      "isDeleted": false,
+      "createdAt": "2024-11-03T14:39:08.145Z",
+      "modifiedAt": "2024-11-03T14:39:08.145Z"
     }
   ],
   "transactions": [
