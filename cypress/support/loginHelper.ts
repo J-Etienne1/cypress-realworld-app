@@ -11,3 +11,5 @@ export function login() {
   signInPage.enterPassword(Cypress.env("PASSWORD"));
   signInPage.clickSignInBtn();
 }
+
+export default login;

@@ -1,4 +1,4 @@
-import { login } from "../../support/loginHelper";
+import login from "../../support/loginHelper";
 import BankAccountPage from "../../page-objects/pages/bankAccountPage";
 import UserProfilesSideNav from "../../page-objects/sections/user-profile-side-panel";
 

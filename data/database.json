@@ -253,6 +253,17 @@
       "isDeleted": false,
       "createdAt": "2024-01-26T14:01:01.815Z",
       "modifiedAt": "2024-03-07T08:44:31.174Z"
+    },
+    {
+      "id": "pCjVMBHhl",
+      "uuid": "88fc91a3-b490-436c-a203-1709702ef7f2",
+      "userId": "uBmeaz5pX",
+      "bankName": "rNGCsHBZ",
+      "accountNumber": "627835149",
+      "routingNumber": "747572685",
+      "isDeleted": false,
+      "createdAt": "2024-11-03T12:18:35.672Z",
+      "modifiedAt": "2024-11-03T12:18:35.672Z"
     }
   ],
   "transactions": [
