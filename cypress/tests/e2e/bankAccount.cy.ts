@@ -8,7 +8,7 @@ describe("Bank Account Page Tests", () => {
   const bankAccountPage = new BankAccountPage();
 
   beforeEach(() => {
-    // Use the reusable login function i created in  ../support/loginHelper
+    // Use the reusable login helper function i created in  ../support/loginHelper
     login();
 
     // Navigate to the bank accounts page as a prerequisite for each test
