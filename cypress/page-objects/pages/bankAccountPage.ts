@@ -38,6 +38,10 @@ class BankAccountPage {
   clickDeleteBankAccountBtn() {
     this.bankAccountContainer.clickDeleteBankAccountBtn();
   }
+
+  createAndVerifyBankAccount(bankName: string, routingNumber: number, accountNumber: number) {
+    this.bankAccountContainer.createAndVerifyBankAccount(bankName, routingNumber, accountNumber);
+  }
 }
 
 export default BankAccountPage;

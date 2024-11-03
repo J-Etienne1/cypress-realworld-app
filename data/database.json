@@ -206,7 +206,7 @@
       "bankName": "Waters, King and O'Reilly Bank",
       "accountNumber": "7774132232",
       "routingNumber": "996645387",
-      "isDeleted": true,
+      "isDeleted": false,
       "createdAt": "2023-03-28T21:55:07.857Z",
       "modifiedAt": "2024-03-07T20:50:34.541Z"
     },
@@ -255,180 +255,15 @@
       "modifiedAt": "2024-03-07T08:44:31.174Z"
     },
     {
-      "id": "pCjVMBHhl",
-      "uuid": "88fc91a3-b490-436c-a203-1709702ef7f2",
-      "userId": "uBmeaz5pX",
-      "bankName": "rNGCsHBZ",
-      "accountNumber": "627835149",
-      "routingNumber": "747572685",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T12:18:35.672Z",
-      "modifiedAt": "2024-11-03T12:18:35.672Z"
-    },
-    {
-      "id": "Xg3Y7G0Bx",
-      "uuid": "11ffc42a-1ad5-46d1-9c88-305136cd99b3",
-      "userId": "uBmeaz5pX",
-      "bankName": "kmmUzLhG",
-      "accountNumber": "866767120",
-      "routingNumber": "941831567",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T13:42:49.024Z",
-      "modifiedAt": "2024-11-03T13:42:49.024Z"
-    },
-    {
-      "id": "VHtwKpZ0J",
-      "uuid": "8a932d13-d1f2-4263-b0b9-3b54fb1af2f9",
-      "userId": "uBmeaz5pX",
-      "bankName": "jPOMaveh",
-      "accountNumber": "624039315",
-      "routingNumber": "659994630",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T13:46:53.399Z",
-      "modifiedAt": "2024-11-03T13:46:53.399Z"
-    },
-    {
-      "id": "xN813iap3",
-      "uuid": "f4c24688-006d-4729-a3bc-e4245adc4b30",
-      "userId": "uBmeaz5pX",
-      "bankName": "azGlVGyx",
-      "accountNumber": "997588635",
-      "routingNumber": "844189623",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T13:51:44.647Z",
-      "modifiedAt": "2024-11-03T13:51:44.647Z"
-    },
-    {
-      "id": "BvlqNbokw",
-      "uuid": "a9694864-3234-48b8-b195-3fec42bcde13",
-      "userId": "uBmeaz5pX",
-      "bankName": "RllepgxT",
-      "accountNumber": "886296712",
-      "routingNumber": "240007261",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T13:58:22.297Z",
-      "modifiedAt": "2024-11-03T13:58:22.297Z"
-    },
-    {
-      "id": "vY7x9a2JE",
-      "uuid": "4d50fd9c-872d-4936-961a-ee469cb4237a",
-      "userId": "uBmeaz5pX",
-      "bankName": "OmSuoeAd",
-      "accountNumber": "286716610",
-      "routingNumber": "212430175",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T13:59:44.975Z",
-      "modifiedAt": "2024-11-03T13:59:44.975Z"
-    },
-    {
-      "id": "J4EBp2kWT",
-      "uuid": "e318c211-047b-4ce7-bf3d-da910be2e392",
-      "userId": "uBmeaz5pX",
-      "bankName": "DxBrGqYf",
-      "accountNumber": "707208399",
-      "routingNumber": "969592887",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T13:59:59.875Z",
-      "modifiedAt": "2024-11-03T13:59:59.875Z"
-    },
-    {
-      "id": "cxFQXj6jW",
-      "uuid": "a3c9032a-4cd3-4d81-9c4e-426930226a4f",
-      "userId": "uBmeaz5pX",
-      "bankName": "RVGcxudq",
-      "accountNumber": "671209590",
-      "routingNumber": "709887779",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T14:21:01.404Z",
-      "modifiedAt": "2024-11-03T14:21:01.404Z"
-    },
-    {
-      "id": "PXQA1qKuh",
-      "uuid": "88b27274-3334-484b-b75d-a397f9c1b2ce",
+      "id": "4y-ud0PPB",
+      "uuid": "a6a2b0b4-3c61-49b9-bf15-f3d9343567a9",
       "userId": "_XblMqbuoP",
-      "bankName": "mYKgUDWd",
-      "accountNumber": "288426049",
-      "routingNumber": "402342964",
-      "isDeleted": false,
-      "createdAt": "2024-11-03T14:22:27.171Z",
-      "modifiedAt": "2024-11-03T14:22:27.171Z"
-    },
-    {
-      "id": "MEkKHdPJW",
-      "uuid": "50a6c90a-d70f-4f57-8da8-a61eca91af9a",
-      "userId": "_XblMqbuoP",
-      "bankName": "cAxfwbCD",
-      "accountNumber": "492430245",
-      "routingNumber": "406309010",
-      "isDeleted": false,
-      "createdAt": "2024-11-03T14:25:58.450Z",
-      "modifiedAt": "2024-11-03T14:25:58.450Z"
-    },
-    {
-      "id": "FqtOl7MMX",
-      "uuid": "32dbb5f1-78de-40fc-887e-ab0a5df07cab",
-      "userId": "_XblMqbuoP",
-      "bankName": "hjhnyEMd",
-      "accountNumber": "847970945",
-      "routingNumber": "189709647",
-      "isDeleted": false,
-      "createdAt": "2024-11-03T14:31:38.963Z",
-      "modifiedAt": "2024-11-03T14:31:38.963Z"
-    },
-    {
-      "id": "0Kl4lDm6N",
-      "uuid": "ed0f94c3-34f7-424f-ad9c-23605f1d87eb",
-      "userId": "_XblMqbuoP",
-      "bankName": "ewDeqOrD",
-      "accountNumber": "289501771",
-      "routingNumber": "896091611",
-      "isDeleted": false,
-      "createdAt": "2024-11-03T14:33:44.991Z",
-      "modifiedAt": "2024-11-03T14:33:44.991Z"
-    },
-    {
-      "id": "SBY4I4w6S",
-      "uuid": "8a0c8475-386d-4d62-8df1-59739a3066c2",
-      "userId": "_XblMqbuoP",
-      "bankName": "QWbvhhvx",
-      "accountNumber": "971401718",
-      "routingNumber": "140852589",
-      "isDeleted": false,
-      "createdAt": "2024-11-03T14:36:37.479Z",
-      "modifiedAt": "2024-11-03T14:36:37.479Z"
-    },
-    {
-      "id": "SlMYMOBl1",
-      "uuid": "dff9bb92-02a7-48dc-93a2-c67eb2997173",
-      "userId": "_XblMqbuoP",
-      "bankName": "ItCwJvii",
-      "accountNumber": "690777014",
-      "routingNumber": "666270121",
-      "isDeleted": false,
-      "createdAt": "2024-11-03T14:39:08.145Z",
-      "modifiedAt": "2024-11-03T14:39:08.145Z"
-    },
-    {
-      "id": "19IlUgXyK",
-      "uuid": "a0064d3c-b0b6-428d-9a9e-db35d91a87e2",
-      "userId": "_XblMqbuoP",
-      "bankName": "LpnOLlzP",
-      "accountNumber": "361765904",
-      "routingNumber": "314337863",
+      "bankName": "KSuyQnia",
+      "accountNumber": "936237883",
+      "routingNumber": "310067007",
       "isDeleted": true,
-      "createdAt": "2024-11-03T14:42:32.422Z",
-      "modifiedAt": "2024-11-03T14:42:32.422Z"
-    },
-    {
-      "id": "oI7u41IVd",
-      "uuid": "2a03d526-cafa-45a0-b12a-0089352aa233",
-      "userId": "_XblMqbuoP",
-      "bankName": "quExQbae",
-      "accountNumber": "330691530",
-      "routingNumber": "817242100",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T14:42:45.609Z",
-      "modifiedAt": "2024-11-03T14:42:45.609Z"
+      "createdAt": "2024-11-03T15:25:58.864Z",
+      "modifiedAt": "2024-11-03T15:25:58.864Z"
     }
   ],
   "transactions": [

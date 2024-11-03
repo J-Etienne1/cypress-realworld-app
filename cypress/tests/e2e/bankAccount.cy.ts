@@ -1,6 +1,9 @@
 import login from "../../support/loginHelper";
 import BankAccountPage from "../../page-objects/pages/bankAccountPage";
 import UserProfilesSideNav from "../../page-objects/sections/user-profile-side-panel";
+import generateRandomBankName from "../../support/generateRandomBankName";
+
+// const randomBankName = generateRandomBankName(10);
 
 describe("Bank Account Page Tests", () => {
   //   const homepage = new HomePage();
@@ -29,26 +32,15 @@ describe("Bank Account Page Tests", () => {
   it("Create Bank Account", () => {
     const randomRoutingNumber = Math.floor(100000000 + Math.random() * 900000000); // Generates a random 9-digit number
     const randomAccountNumber = Math.floor(100000000 + Math.random() * 900000000); // Generates another random 9-digit number
+    const randomBankName = generateRandomBankName(8);
+
+    bankAccountPage.bankAccountContainer.createAndVerifyBankAccount(
+      randomBankName,
+      randomRoutingNumber,
+      randomAccountNumber
+    );
 
     // Function to generate a random string for bank names
-    function generateRandomBankName(length: number) {
-      let result = "";
-      const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-      const charactersLength = characters.length;
-      for (let i = 0; i < length; i++) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-      }
-      return result;
-    }
-
-    const randomBankName = generateRandomBankName(8); // Generate an 8-character random bank name
-
-    bankAccountPage.clickCreateBankAccount();
-    bankAccountPage.enterBankName(randomBankName);
-    bankAccountPage.enterRoutingNumber(randomRoutingNumber);
-    bankAccountPage.enterAccountNumber(randomAccountNumber);
-    bankAccountPage.clickCreateBankAccSaveBtn();
-    bankAccountPage.verifyNewBankAccountCreated(randomBankName);
   });
 
   it("Delete a Bank Account", () => {

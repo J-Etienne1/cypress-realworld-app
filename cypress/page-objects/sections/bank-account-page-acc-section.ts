@@ -44,6 +44,15 @@ class BankAccountContainer {
   clickDeleteBankAccountBtn() {
     cy.get(bankAccPageSelectors.deleteBankAccount).last().click();
   }
+
+  createAndVerifyBankAccount(bankName: string, routingNumber: number, accountNumber: number) {
+    this.clickCreateBankAccount();
+    this.enterBankName(bankName);
+    this.enterRoutingNumber(routingNumber);
+    this.enterAccountNumber(accountNumber);
+    this.clickCreateBankAccSaveBtn();
+    this.verifyNewBankAccountCreated(bankName);
+  }
 }
 
 export default BankAccountContainer;
