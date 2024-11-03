@@ -38,6 +38,10 @@ class BankAccountPage {
   clickDeleteBankAccountBtn() {
     this.bankAccountContainer.clickDeleteBankAccountBtn();
   }
+
+  findBankAccountByName(bankName: string) {
+    this.bankAccountContainer.findBankAccountByName(bankName);
+  }
 }
 
 export default BankAccountPage;

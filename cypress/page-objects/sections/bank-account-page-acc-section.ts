@@ -44,6 +44,10 @@ class BankAccountContainer {
   clickDeleteBankAccountBtn() {
     cy.get(bankAccPageSelectors.deleteBankAccount).click();
   }
+
+  findBankAccountByName() {
+    cy.get(bankAccPageSelectors.bankAccountListItem);
+  }
 }
 
 export default BankAccountContainer;
