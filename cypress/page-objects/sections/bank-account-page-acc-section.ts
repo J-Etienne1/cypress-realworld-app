@@ -40,6 +40,10 @@ class BankAccountContainer {
   verifyNewBankAccountCreated(bankName: string) {
     cy.get(bankAccPageSelectors.bankAccounts).contains(bankName).should("be.visible");
   }
+
+  clickDeleteBankAccountBtn() {
+    cy.get(bankAccPageSelectors.deleteBankAccount).click();
+  }
 }
 
 export default BankAccountContainer;

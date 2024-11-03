@@ -34,6 +34,10 @@ class BankAccountPage {
   verifyNewBankAccountCreated(bankName: string) {
     this.bankAccountContainer.verifyNewBankAccountCreated(bankName);
   }
+
+  clickDeleteBankAccountBtn() {
+    this.bankAccountContainer.clickDeleteBankAccountBtn();
+  }
 }
 
 export default BankAccountPage;

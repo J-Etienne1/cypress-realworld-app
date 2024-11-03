@@ -51,7 +51,7 @@ describe("Bank Account Page Tests", () => {
     bankAccountPage.verifyNewBankAccountCreated(randomBankName);
   });
 
-  it.skip("Delete Newly Created Bank Account", () => {
-    // TO DO
+  it("Delete Newly Created Bank Account", () => {
+    bankAccountPage.findBankAccountByName(randomBankName)
   });
 });
