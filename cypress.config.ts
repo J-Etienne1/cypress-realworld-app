@@ -131,6 +131,13 @@ module.exports = defineConfig({
         },
       });
 
+      on("task", {
+        logMessage(message: string): Promise<string> {
+          console.log("Task received message:", message);
+          return Promise.resolve(`Message received: ${message}`);
+        },
+      });
+
       codeCoverageTask(on, config);
       return config;
     },
