@@ -137,7 +137,8 @@ module.exports = defineConfig({
         getFileName(filePath: string) {
           const fileName = path.basename(filePath);
           if (fs.existsSync(filePath)) {
-            return fileName;
+            // Remove the last four characters ('.json') to get the base name
+            return fileName.slice(0, -4);
           } else {
             throw new Error(`File not found: ${filePath}`);
           }
