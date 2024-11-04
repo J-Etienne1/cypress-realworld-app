@@ -7,6 +7,7 @@ import codeCoverageTask from "@cypress/code-coverage/task";
 import { devServer } from "@cypress/vite-dev-server";
 import { defineConfig } from "cypress";
 import { mergeConfig, loadEnv } from "vite";
+import fs from "fs";
 
 dotenv.config({ path: ".env.local" });
 dotenv.config();
@@ -131,10 +132,15 @@ module.exports = defineConfig({
         },
       });
 
+      // Custom Task I created
       on("task", {
-        logMessage(message: string): Promise<string> {
-          console.log("Task received message:", message);
-          return Promise.resolve(`Message received: ${message}`);
+        getFileName(filePath: string) {
+          const fileName = path.basename(filePath);
+          if (fs.existsSync(filePath)) {
+            return fileName;
+          } else {
+            throw new Error(`File not found: ${filePath}`);
+          }
         },
       });
 
