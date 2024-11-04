@@ -255,37 +255,15 @@
       "modifiedAt": "2024-03-07T08:44:31.174Z"
     },
     {
-      "id": "4y-ud0PPB",
-      "uuid": "a6a2b0b4-3c61-49b9-bf15-f3d9343567a9",
+      "id": "pdmCcT2JG",
+      "uuid": "048580b5-d0ef-4224-8bf8-0b6ad2d367cf",
       "userId": "_XblMqbuoP",
-      "bankName": "KSuyQnia",
-      "accountNumber": "936237883",
-      "routingNumber": "310067007",
+      "bankName": "mqpyvNPz",
+      "accountNumber": "831671139",
+      "routingNumber": "440795343",
       "isDeleted": true,
-      "createdAt": "2024-11-03T15:25:58.864Z",
-      "modifiedAt": "2024-11-03T15:25:58.864Z"
-    },
-    {
-      "id": "mK9x7I8lA",
-      "uuid": "4b200a6a-c535-4536-9a0e-956a76032c66",
-      "userId": "_XblMqbuoP",
-      "bankName": "upxXfAcn",
-      "accountNumber": "602188795",
-      "routingNumber": "213039633",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T15:29:14.387Z",
-      "modifiedAt": "2024-11-03T15:29:14.387Z"
-    },
-    {
-      "id": "jgX8cngNi",
-      "uuid": "5779f33a-7917-43e1-a22e-2be8060e5899",
-      "userId": "_XblMqbuoP",
-      "bankName": "VsgcuoGl",
-      "accountNumber": "693500833",
-      "routingNumber": "688279355",
-      "isDeleted": true,
-      "createdAt": "2024-11-03T15:36:39.441Z",
-      "modifiedAt": "2024-11-03T15:36:39.441Z"
+      "createdAt": "2024-11-04T19:14:36.758Z",
+      "modifiedAt": "2024-11-04T19:14:36.758Z"
     }
   ],
   "transactions": [
