@@ -132,7 +132,7 @@ module.exports = defineConfig({
         },
       });
 
-      // Custom Task I created
+      // Custom Task I created to get a file name
       on("task", {
         getFileName(filePath: string) {
           const fileName = path.basename(filePath);
@@ -141,6 +141,16 @@ module.exports = defineConfig({
             return fileName.slice(0, -4);
           } else {
             throw new Error(`File not found: ${filePath}`);
+          }
+        },
+
+        // Custom Task I created to rename file
+        renameFile({ oldPath, newPath }: { oldPath: string; newPath: string }) {
+          if (fs.existsSync(oldPath)) {
+            fs.renameSync(oldPath, newPath);
+            return `File renamed to ${newPath}`;
+          } else {
+            throw new Error(`File not found: ${oldPath}`);
           }
         },
       });

@@ -3,7 +3,7 @@ import path from "path";
 describe("File Name Task", () => {
   it("reads the file name and saves it as a variable", () => {
     // Specify the path to your file
-    const filePath = "cypress/tests/learning/test-file.json";
+    const filePath = "cypress/tests/learning/test-file-copy.json";
 
     // Call the `getFileName` task to retrieve the file name
     cy.task("getFileName", filePath).then((fileName) => {
@@ -25,12 +25,6 @@ describe("File Name Task", () => {
       const reportName = `${baseName}-report-${uniqueDateTime}`;
       // Log the new formatted report name
       cy.log(reportName);
-
-      // Rename the original file to the new report name
-      cy.task("renameFile", {
-        oldPath: filePath,
-        newPath: `cypress/tests/learning/${reportName}.json`,
-      });
     });
   });
 });
