@@ -10,7 +10,6 @@ describe("File Name Task", () => {
       // Assert that fileName is a string
       const fileNameStr = fileName as string;
 
-
       // Get the base name without the extension
       const baseName = path.basename(fileNameStr, path.extname(fileNameStr)); // This will return 'test-file'
 
@@ -19,7 +18,7 @@ describe("File Name Task", () => {
 
       // You can now use `fileNameStr` as a variable in your test
       // Log the file name to the Cypress command log
-    //   cy.log(fileNameStr); // commented out as using slice in the Task
+      //   cy.log(fileNameStr); // commented out as using slice in the Task
 
       const uniqueDateTime = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
       // Create a new formatted report name
