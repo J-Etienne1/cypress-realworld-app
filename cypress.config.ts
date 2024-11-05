@@ -135,6 +135,7 @@ module.exports = defineConfig({
       // Custom Task I created to get a file name
       on("task", {
         getFileName(filePath: string) {
+          // const fileName = path.basename(filePath);
           const fileName = path.basename(filePath);
           if (fs.existsSync(filePath)) {
             // Remove the last four characters ('.json') to get the base name
