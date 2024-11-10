@@ -106,10 +106,25 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
-      on("before:browser:launch", (browser = {}, launchOptions) => {
-        prepareAudit(launchOptions);
-      });
-
+      on(
+        "before:browser:launch",
+        (
+          browser = {
+            family: "chromium",
+            name: "",
+            channel: "",
+            displayName: "",
+            version: "",
+            majorVersion: "",
+            path: "",
+            isHeaded: false,
+            isHeadless: false,
+          },
+          launchOptions
+        ) => {
+          prepareAudit(launchOptions);
+        }
+      );
 
       const testDataApiEndpoint = `${config.env.apiUrl}/testData`;
 

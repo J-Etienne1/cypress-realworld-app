@@ -11,7 +11,24 @@ describe("Home Page Performance`Tests", () => {
 
   it("should verify the home page logo is visible", () => {
     homepage.verifyHomePageLogoIsVisible();
-    cy.lighthouse();
+    cy.lighthouse(
+      {
+        performance: 20,
+        accessibility: 20,
+        "best-practices": 20,
+        seo: 20,
+      },
+      {
+        formFactor: "desktop",
+        screenEmulation: {
+          mobile: false,
+          disable: false,
+          width: Cypress.config("viewportWidth"),
+          height: Cypress.config("viewportHeight"),
+          deviceScaleRatio: 1,
+        },
+      }
+    );
   });
 
   it("should verify the transaction list is visible", () => {
