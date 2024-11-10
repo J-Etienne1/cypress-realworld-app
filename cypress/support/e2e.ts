@@ -1,4 +1,6 @@
 // @ts-check
+/// <reference types="@cypress-audit/lighthouse" />
+
 import "@cypress/code-coverage/support";
 import "./commands";
 import { isMobile } from "./utils";
