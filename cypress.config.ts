@@ -8,6 +8,7 @@ import { devServer } from "@cypress/vite-dev-server";
 import { defineConfig } from "cypress";
 import { mergeConfig, loadEnv } from "vite";
 import fs from "fs";
+const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
 
 dotenv.config({ path: ".env.local" });
 dotenv.config();
@@ -105,6 +106,9 @@ module.exports = defineConfig({
     viewportWidth: 1280,
     experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
+      on("before:browser:launch", (browser = {}, launchOptions) => {
+        prepareAudit(launchOptions);
+      });
       const testDataApiEndpoint = `${config.env.apiUrl}/testData`;
 
       const queryDatabase = ({ entity, query }, callback) => {
@@ -154,6 +158,10 @@ module.exports = defineConfig({
             throw new Error(`File not found: ${oldPath}`);
           }
         },
+      });
+
+      on("task", {
+        lighthouse: lighthouse(),
       });
 
       codeCoverageTask(on, config);
