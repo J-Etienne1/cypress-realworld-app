@@ -181,6 +181,24 @@ module.exports = defineConfig({
         lighthouse: lighthouse(),
       });
 
+      on("task", {
+        saveLighthouseReport({ report, filename }: { report: string; filename: string }) {
+          const reportsDir = path.resolve(__dirname, "cypress", "performance-report");
+
+          // Create the directory if it doesn't exist
+          if (!fs.existsSync(reportsDir)) {
+            fs.mkdirSync(reportsDir, { recursive: true });
+          }
+
+          const filePath = path.join(reportsDir, filename);
+
+          // Write the report to the file
+          fs.writeFileSync(filePath, report, "utf8");
+          console.log(`Lighthouse report saved to ${filePath}`);
+          return null;
+        },
+      });
+
       codeCoverageTask(on, config);
       return config;
     },

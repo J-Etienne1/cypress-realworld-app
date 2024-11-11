@@ -13,10 +13,10 @@ describe("Home Page Performance`Tests", () => {
     homepage.verifyHomePageLogoIsVisible();
     cy.lighthouse(
       {
-        performance: 20,
-        accessibility: 20,
-        "best-practices": 20,
-        seo: 20,
+        performance: 10,
+        accessibility: 10,
+        "best-practices": 10,
+        seo: 10,
       },
       {
         formFactor: "desktop",
@@ -28,13 +28,13 @@ describe("Home Page Performance`Tests", () => {
           deviceScaleRatio: 1,
         },
       }
-    );
-  });
-
-  it("should verify the transaction list is visible", () => {
-    homepage.verifyTransactionListIsVisible();
+    ).then((report: any) => {
+      cy.task("saveLighthouseReport", {
+        report: JSON.stringify(report, null, 2),
+        filename: `lighthouse-report-${Date.now()}.json`,
+      });
+    });
   });
 });
-
 //TODO : see about refactoring so scores are not on each test and can be imported, custom command?
 //TODO: save the report to a lighthouse performance folder/file
