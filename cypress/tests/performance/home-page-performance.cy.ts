@@ -37,4 +37,4 @@ describe("Home Page Performance`Tests", () => {
   });
 });
 //TODO : see about refactoring so scores are not on each test and can be imported, custom command?
-//TODO: save the report to a lighthouse performance folder/file
+//TODO: save the report to a lighthouse performance folder/file -- DONE
