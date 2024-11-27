@@ -32,4 +32,21 @@ describe("Learning API Intercept", () => {
       expect(intercept.response?.body?.Name).eq("Testing Name");
     });
   });
+
+  // Stubbing with Fixtures
+  it.only("Data-Driven Mock API Response", () => {
+    cy.visit("https://dummyapi.io/explorer");
+
+    cy.intercept(
+      "GET",
+      "https://dummyapi.io/data/v1/post/60d21af267d0d8992e610b8d/comment?limit=10",
+      { fixture: "intercept-tests-fixture.json" }
+    ).as("comments");
+    cy.get(".flex > :nth-child(5)").click();
+    cy.wait("@comments").then((intercept) => {
+      console.log(intercept);
+      expect(intercept.response?.body?.username).eq("Jason");
+      expect(intercept.response?.body?.password).eq("qwerty");
+    });
+  });
 });
