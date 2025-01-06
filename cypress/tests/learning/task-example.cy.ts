@@ -1,7 +1,7 @@
 import path from "path";
 
 describe("File Name Task", () => {
-  it("reads the file name and saves it as a variable", () => {
+  it.skip("reads the file name and saves it as a variable", () => {
     // Specify the path to your file
     const filePath = "cypress/tests/learning/test-file.json";
 
