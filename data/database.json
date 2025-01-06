@@ -253,6 +253,17 @@
       "isDeleted": false,
       "createdAt": "2024-01-26T14:01:01.815Z",
       "modifiedAt": "2024-03-07T08:44:31.174Z"
+    },
+    {
+      "id": "ONjBZEj71",
+      "uuid": "80468568-2baa-411a-bcaa-35b27cfb1dd7",
+      "userId": "_XblMqbuoP",
+      "bankName": "RJssFyvI",
+      "accountNumber": "366470340",
+      "routingNumber": "984032295",
+      "isDeleted": true,
+      "createdAt": "2025-01-06T19:42:40.392Z",
+      "modifiedAt": "2025-01-06T19:42:40.392Z"
     }
   ],
   "transactions": [
